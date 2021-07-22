@@ -42,6 +42,7 @@ let s:bgdarker  = g:dracula#palette.bgdarker
 let s:comment   = g:dracula#palette.comment
 let s:selection = g:dracula#palette.selection
 let s:subtle    = g:dracula#palette.subtle
+let s:subtledark= g:dracula#palette.subtledark
 
 let s:cyan      = g:dracula#palette.cyan
 let s:green     = g:dracula#palette.green
@@ -205,11 +206,11 @@ call s:h('StatusLineNC', s:none, s:bglight)
 call s:h('StatusLineTerm', s:none, s:bglighter, [s:attrs.bold])
 call s:h('StatusLineTermNC', s:none, s:bglight)
 call s:h('WildMenu', s:bg, s:purple, [s:attrs.bold])
-call s:h('CursorLine', s:none, s:subtle)
+call s:h('CursorLine', s:none, s:subtledark)
 
 hi! link ColorColumn  DraculaBgDark
 hi! link CursorColumn CursorLine
-hi! link CursorLineNr DraculaYellow
+hi! link CursorLineNr DraculaFg
 hi! link DiffAdd      DraculaGreen
 hi! link DiffAdded    DiffAdd
 hi! link DiffChange   DraculaDiffChange
