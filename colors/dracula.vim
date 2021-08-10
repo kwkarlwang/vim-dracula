@@ -179,9 +179,9 @@ call s:h('DraculaYellowItalic', s:yellow, s:none, [s:attrs.italic])
 
 call s:h('DraculaError', s:red, s:none, [], s:red)
 
-call s:h('DraculaErrorLine', s:none, s:none, [s:attrs.undercurl], s:red)
-call s:h('DraculaWarnLine', s:none, s:none, [s:attrs.undercurl], s:orange)
-call s:h('DraculaInfoLine', s:none, s:none, [s:attrs.undercurl], s:cyan)
+call s:h('DraculaErrorLine', s:none, s:none, [s:attrs.undercurl], s:none)
+call s:h('DraculaWarnLine', s:none, s:none, [s:attrs.undercurl], s:none)
+call s:h('DraculaInfoLine', s:none, s:none, [s:attrs.undercurl], s:none)
 
 call s:h('DraculaTodo', s:cyan, s:none, [s:attrs.bold, s:attrs.inverse])
 call s:h('DraculaSearch', s:green, s:none, [s:attrs.inverse])
