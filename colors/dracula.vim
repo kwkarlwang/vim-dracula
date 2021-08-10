@@ -116,8 +116,8 @@ function! s:h(scope, fg, ...) " bg, attr_list, special
   " nearly all do not support undercurl
   let l:special = get(a:, 3, ['NONE', 'NONE'])
   if l:special[0] !=# 'NONE' && l:fg[0] ==# 'NONE' && !has('gui_running')
-    let l:fg[0] = l:special[0]
-    let l:fg[1] = l:special[1]
+    " let l:fg[0] = l:special[0]
+    " let l:fg[1] = l:special[1]
   endif
 
   let l:hl_string = [
