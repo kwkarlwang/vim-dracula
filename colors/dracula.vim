@@ -116,8 +116,8 @@ function! s:h(scope, fg, ...) " bg, attr_list, special
   " nearly all do not support undercurl
   let l:special = get(a:, 3, ['NONE', 'NONE'])
   if l:special[0] !=# 'NONE' && l:fg[0] ==# 'NONE' && !has('gui_running')
-    " let l:fg[0] = l:special[0]
-    " let l:fg[1] = l:special[1]
+    let l:fg[0] = l:special[0]
+    let l:fg[1] = l:special[1]
   endif
 
   let l:hl_string = [
@@ -179,9 +179,9 @@ call s:h('DraculaYellowItalic', s:yellow, s:none, [s:attrs.italic])
 
 call s:h('DraculaError', s:red, s:none, [], s:red)
 
-call s:h('DraculaErrorLine', s:none, s:none, [s:attrs.undercurl], s:red)
-call s:h('DraculaWarnLine', s:none, s:none, [s:attrs.undercurl], s:orange)
-call s:h('DraculaInfoLine', s:none, s:none, [s:attrs.undercurl], s:cyan)
+call s:h('DraculaErrorLine', s:fg, s:none, [s:attrs.undercurl], s:red)
+call s:h('DraculaWarnLine', s:fg, s:none, [s:attrs.undercurl], s:orange)
+call s:h('DraculaInfoLine', s:fg, s:none, [s:attrs.undercurl], s:cyan)
 
 call s:h('DraculaTodo', s:cyan, s:none, [s:attrs.bold, s:attrs.inverse])
 call s:h('DraculaSearch', s:green, s:none, [s:attrs.inverse])
