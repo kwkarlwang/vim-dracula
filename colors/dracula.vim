@@ -315,6 +315,8 @@ hi! link helpCommand DraculaPurple
 hi! link helpExample DraculaGreen
 hi! link helpBacktick Special
 
+hi! link NormalFloat DraculaBgLight
+
 "}}}
 
 " vim: fdm=marker ts=2 sts=2 sw=2 fdl=0 et:
