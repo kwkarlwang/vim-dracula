@@ -225,8 +225,10 @@ hi! link IncSearch    DraculaOrangeInverse
 call s:h('LineNr', s:comment)
 hi! link MoreMsg      DraculaFgBold
 hi! link NonText      DraculaSubtle
-hi! link Pmenu        DraculaBgDark
-hi! link PmenuSbar    DraculaBgDark
+" hi! link Pmenu        DraculaBgDark
+" hi! link PmenuSbar    DraculaBgDark
+hi! link Pmenu        DraculaBgLight
+hi! link PmenuSbar    DraculaBgLight
 hi! link PmenuSel     DraculaSelection
 hi! link PmenuThumb   DraculaSelection
 hi! link Question     DraculaFgBold
