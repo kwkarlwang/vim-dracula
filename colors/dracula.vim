@@ -316,6 +316,7 @@ hi! link helpExample DraculaGreen
 hi! link helpBacktick Special
 
 hi! link NormalFloat DraculaBgLight
+hi! link FloatBorder DraculaBgLight
 
 "}}}
 
