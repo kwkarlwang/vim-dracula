@@ -218,7 +218,7 @@ hi! link DiffDelete   DraculaDiffDelete
 hi! link DiffRemoved  DiffDelete
 hi! link DiffText     DraculaDiffText
 hi! link Directory    DraculaPurpleBold
-hi! link ErrorMsg     DraculaRedInverse
+hi! link ErrorMsg     DraculaRedRed
 hi! link FoldColumn   DraculaSubtle
 hi! link Folded       DraculaBoundary
 hi! link IncSearch    DraculaOrangeInverse
@@ -241,7 +241,7 @@ hi! link Title        DraculaGreenBold
 hi! link VertSplit    DraculaBoundary
 hi! link Visual       DraculaSelection
 hi! link VisualNOS    Visual
-hi! link WarningMsg   DraculaOrangeInverse
+hi! link WarningMsg   DraculaOrange
 
 " }}}
 " Syntax: {{{
