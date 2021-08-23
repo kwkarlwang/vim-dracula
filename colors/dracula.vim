@@ -218,15 +218,13 @@ hi! link DiffDelete   DraculaDiffDelete
 hi! link DiffRemoved  DiffDelete
 hi! link DiffText     DraculaDiffText
 hi! link Directory    DraculaPurpleBold
-hi! link ErrorMsg     DraculaRedInverse
+hi! link ErrorMsg     DraculaRed
 hi! link FoldColumn   DraculaSubtle
 hi! link Folded       DraculaBoundary
 hi! link IncSearch    DraculaOrangeInverse
 call s:h('LineNr', s:comment)
 hi! link MoreMsg      DraculaFgBold
 hi! link NonText      DraculaSubtle
-" hi! link Pmenu        DraculaBgDark
-" hi! link PmenuSbar    DraculaBgDark
 hi! link Pmenu        DraculaBgDarker
 hi! link PmenuSbar    DraculaBgDarker
 hi! link PmenuSel     DraculaSelection
