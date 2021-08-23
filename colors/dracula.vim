@@ -239,7 +239,7 @@ hi! link Title        DraculaGreenBold
 hi! link VertSplit    DraculaBoundary
 hi! link Visual       DraculaSelection
 hi! link VisualNOS    Visual
-hi! link WarningMsg   DraculaOrangeInverse
+hi! link WarningMsg   DraculaOrange
 
 " }}}
 " Syntax: {{{
