@@ -1,7 +1,8 @@
 " Palette: {{{
 
 let g:dracula#palette           = {}
-let g:dracula#palette.fg        = ['#F8F8F2', 253]
+" let g:dracula#palette.fg        = ['#F8F8F2', 253]
+let g:dracula#palette.fg        = ['#ffffe0', 253]
 
 let g:dracula#palette.bglighter = ['#424450', 238]
 let g:dracula#palette.bglight   = ['#343746', 237]
