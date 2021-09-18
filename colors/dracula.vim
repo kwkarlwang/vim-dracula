@@ -52,6 +52,8 @@ let s:purple    = g:dracula#palette.purple
 let s:red       = g:dracula#palette.red
 let s:yellow    = g:dracula#palette.yellow
 
+let s:brightyellow    = g:dracula#palette.color_11
+
 let s:none      = ['NONE', 'NONE']
 
 if has('nvim')
@@ -245,7 +247,7 @@ hi! link WarningMsg   DraculaOrange
 " Syntax: {{{
 
 " Required as some plugins will overwrite
-call s:h('MatchParen', s:color_11, s:none, [s:attrs.underline])
+call s:h('MatchParen', s:brightyellow, s:none, [s:attrs.underline])
 call s:h('Conceal', s:cyan, s:none)
 
 " Neovim uses SpecialKey for escape characters only. Vim uses it for that, plus whitespace.
