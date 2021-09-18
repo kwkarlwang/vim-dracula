@@ -233,7 +233,7 @@ hi! link Question     DraculaFgBold
 hi! link Search       DraculaSearch
 call s:h('SignColumn', s:comment)
 hi! link TabLine      DraculaBoundary
-hi! link TabLineFill  DraculaBgDark
+hi! link TabLineFill  DraculaBgDarker
 hi! link TabLineSel   Normal
 hi! link Title        DraculaGreenBold
 hi! link VertSplit    DraculaBoundary
@@ -245,7 +245,7 @@ hi! link WarningMsg   DraculaOrange
 " Syntax: {{{
 
 " Required as some plugins will overwrite
-call s:h('MatchParen', s:yellow, s:none, [s:attrs.underline])
+call s:h('MatchParen', s:green, s:none, [s:attrs.underline])
 call s:h('Conceal', s:cyan, s:none)
 
 " Neovim uses SpecialKey for escape characters only. Vim uses it for that, plus whitespace.
