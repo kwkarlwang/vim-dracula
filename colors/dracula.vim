@@ -263,14 +263,18 @@ if has('nvim')
   hi! link ReferenceText DraculaSelection
   hi! link ReferenceRead DraculaSelection
   hi! link ReferenceWrite DraculaSelection
-  hi! link DiagnosticsDefaultInformation DraculaCyan
-  hi! link DiagnosticsDefaultHint DraculaCyan
-  hi! link DiagnosticsDefaultError DraculaError
-  hi! link DiagnosticsDefaultWarning DraculaOrange
-  hi! link DiagnosticsUnderlineError DraculaErrorLine
-  hi! link DiagnosticsUnderlineHint DraculaInfoLine
-  hi! link DiagnosticsUnderlineInformation DraculaInfoLine
-  hi! link DiagnosticsUnderlineWarning DraculaWarnLine
+  hi! link DiagnosticDefaultInformation DraculaCyan
+  hi! link DiagnosticInfo DraculaCyan
+  hi! link DiagnosticDefaultHint DraculaCyan
+  hi! link DiagnosticHint DraculaCyan
+  hi! link DiagnosticDefaultError DraculaError
+  hi! link DiagnosticError DraculaError
+  hi! link DiagnosticDefaultWarning DraculaOrange
+  hi! link DiagnosticWarn DraculaOrange
+  hi! link DiagnosticUnderlineError DraculaErrorLine
+  hi! link DiagnosticUnderlineHint DraculaInfoLine
+  hi! link DiagnosticUnderlineInfo DraculaInfoLine
+  hi! link DiagnosticUnderlineWarn DraculaWarnLine
 else
   hi! link SpecialKey DraculaPink
 endif
