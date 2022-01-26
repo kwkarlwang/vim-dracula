@@ -260,16 +260,33 @@ call s:h('Conceal', s:cyan, s:none)
 " Neovim uses SpecialKey for escape characters only. Vim uses it for that, plus whitespace.
 if has('nvim')
   hi! link SpecialKey DraculaRed
-  hi! link ReferenceText DraculaSelection
-  hi! link ReferenceRead DraculaSelection
-  hi! link ReferenceWrite DraculaSelection
-  hi! link DiagnosticDefaultInformation DraculaCyan
+  " hi! link ReferenceText DraculaSelection
+  " hi! link ReferenceRead DraculaSelection
+  " hi! link ReferenceWrite DraculaSelection
+  " hi! link DiagnosticDefaultInformation DraculaCyan
+  " hi! link DiagnosticInfo DraculaCyan
+  " hi! link DiagnosticDefaultHint DraculaCyan
+  " hi! link DiagnosticHint DraculaCyan
+  " hi! link DiagnosticDefaultError DraculaError
+  " hi! link DiagnosticError DraculaError
+  " hi! link DiagnosticDefaultWarning DraculaOrange
+  hi! link LspReferenceText DraculaSelection
+  hi! link LspReferenceRead DraculaSelection
+  hi! link LspReferenceWrite DraculaSelection
+  " Link old 'LspDiagnosticsDefault*' hl groups
+  " for backward compatibility with neovim v0.5.x
+  hi! link LspDiagnosticsDefaultInformation DiagnosticInfo
+  hi! link LspDiagnosticsDefaultHint DiagnosticHint
+  hi! link LspDiagnosticsDefaultError DiagnosticError
+  hi! link LspDiagnosticsDefaultWarning DiagnosticWarn
+  hi! link LspDiagnosticsUnderlineError DiagnosticUnderlineError
+  hi! link LspDiagnosticsUnderlineHint DiagnosticUnderlineHint
+  hi! link LspDiagnosticsUnderlineInformation DiagnosticUnderlineInfo
+  hi! link LspDiagnosticsUnderlineWarning DiagnosticUnderlineWarn
+  
   hi! link DiagnosticInfo DraculaCyan
-  hi! link DiagnosticDefaultHint DraculaCyan
   hi! link DiagnosticHint DraculaCyan
-  hi! link DiagnosticDefaultError DraculaError
   hi! link DiagnosticError DraculaError
-  hi! link DiagnosticDefaultWarning DraculaOrange
   hi! link DiagnosticWarn DraculaOrange
   hi! link DiagnosticUnderlineError DraculaErrorLine
   hi! link DiagnosticUnderlineHint DraculaInfoLine
