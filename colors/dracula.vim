@@ -230,7 +230,7 @@ call s:h('CursorLine', s:none, s:subtledark)
 hi! link ColorColumn  DraculaBgDark
 hi! link CursorColumn CursorLine
 hi! link CursorLineNr DraculaFg
-hi! link DiffAdd      DraculaDiffAdd
+hi! link DiffAdd      DraculaGreen
 hi! link DiffAdded    DiffAdd
 hi! link DiffChange   DraculaDiffChange
 hi! link DiffDelete   DraculaDiffDelete
