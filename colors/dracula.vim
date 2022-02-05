@@ -202,7 +202,8 @@ call s:h('DraculaSearch', s:green, s:none, [s:attrs.inverse])
 call s:h('DraculaBoundary', s:comment, s:bgdark)
 call s:h('DraculaLink', s:cyan, s:none, [s:attrs.underline])
 
-call s:h('DraculaDiffChange', s:orange, s:none)
+call s:h('DraculaDiffAdd', s:green, s:bg)
+call s:h('DraculaDiffChange', s:orange, s:bg)
 call s:h('DraculaDiffText', s:bg, s:orange)
 call s:h('DraculaDiffDelete', s:red, s:bg)
 
@@ -230,7 +231,7 @@ call s:h('CursorLine', s:none, s:subtledark)
 hi! link ColorColumn  DraculaBgDark
 hi! link CursorColumn CursorLine
 hi! link CursorLineNr DraculaFg
-hi! link DiffAdd      DraculaGreen
+hi! link DiffAdd      DraculaDiffAdd
 hi! link DiffAdded    DiffAdd
 hi! link DiffChange   DraculaDiffChange
 hi! link DiffDelete   DraculaDiffDelete
