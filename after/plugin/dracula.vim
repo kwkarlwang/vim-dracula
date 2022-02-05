@@ -51,13 +51,13 @@ if has('nvim-0.5') && luaeval("pcall(require, 'gitsigns')")
   " https://github.com/lewis6991/gitsigns.nvim requires nvim > 0.5
   " has('nvim-0.5') checks >= 0.5, so this should be future-proof.
   hi! link GitSignsAdd      DraculaDiffAddSign
-  hi! link GitSignsAddLn    DraculaDiffAddSign
+  hi! link GitSignsAddLn    DraculaGreen
   hi! link GitSignsAddNr    DraculaDiffAddSign
   hi! link GitSignsChange   DraculaDiffChangeSign
-  hi! link GitSignsChangeLn DraculaDiffChangeSign
+  hi! link GitSignsChangeLn DraculaOrange
   hi! link GitSignsChangeNr DraculaDiffChangeSign
   hi! link GitSignsDelete   DraculaDiffDeleteSign
-  hi! link GitSignsDeleteLn DraculaDiffDeleteSign
+  hi! link GitSignsDeleteLn DraculaRed
   hi! link GitSignsDeleteNr DraculaDiffDeleteSign
 endif
 " }}}
