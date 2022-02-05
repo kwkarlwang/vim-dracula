@@ -52,6 +52,11 @@ let s:purple    = g:dracula#palette.purple
 let s:red       = g:dracula#palette.red
 let s:yellow    = g:dracula#palette.yellow
 
+let s:diffadd   = g:dracula#palette.diffadd
+let s:diffdelete= g:dracula#palette.diffdelete
+let s:diffchange= g:dracula#palette.diffchange
+let s:difftext  = g:dracula#palette.difftext
+
 let s:none      = ['NONE', 'NONE']
 
 if has('nvim')
@@ -197,9 +202,10 @@ call s:h('DraculaSearch', s:green, s:none, [s:attrs.inverse])
 call s:h('DraculaBoundary', s:comment, s:bgdark)
 call s:h('DraculaLink', s:cyan, s:none, [s:attrs.underline])
 
-call s:h('DraculaDiffChange', s:orange, s:none)
-call s:h('DraculaDiffText', s:bg, s:orange)
-call s:h('DraculaDiffDelete', s:red, s:bg)
+call s:h('DraculaDiffAdd', s:none, s:diffadd)
+call s:h('DraculaDiffChange', s:none, s:diffchange)
+call s:h('DraculaDiffText', s:none, s:difftext)
+call s:h('DraculaDiffDelete', s:none, s:diffdelete)
 
 " }}}2
 
@@ -220,7 +226,7 @@ call s:h('CursorLine', s:none, s:subtledark)
 hi! link ColorColumn  DraculaBgDark
 hi! link CursorColumn CursorLine
 hi! link CursorLineNr DraculaFg
-hi! link DiffAdd      DraculaGreen
+hi! link DiffAdd      DraculaDiffAdd
 hi! link DiffAdded    DiffAdd
 hi! link DiffChange   DraculaDiffChange
 hi! link DiffDelete   DraculaDiffDelete
@@ -260,16 +266,6 @@ call s:h('Conceal', s:cyan, s:none)
 " Neovim uses SpecialKey for escape characters only. Vim uses it for that, plus whitespace.
 if has('nvim')
   hi! link SpecialKey DraculaRed
-  " hi! link ReferenceText DraculaSelection
-  " hi! link ReferenceRead DraculaSelection
-  " hi! link ReferenceWrite DraculaSelection
-  " hi! link DiagnosticDefaultInformation DraculaCyan
-  " hi! link DiagnosticInfo DraculaCyan
-  " hi! link DiagnosticDefaultHint DraculaCyan
-  " hi! link DiagnosticHint DraculaCyan
-  " hi! link DiagnosticDefaultError DraculaError
-  " hi! link DiagnosticError DraculaError
-  " hi! link DiagnosticDefaultWarning DraculaOrange
   hi! link LspReferenceText DraculaSelection
   hi! link LspReferenceRead DraculaSelection
   hi! link LspReferenceWrite DraculaSelection

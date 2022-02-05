@@ -23,6 +23,11 @@ let g:dracula#palette.purple    = ['#BF9EEE', 141]
 let g:dracula#palette.red       = ['#EE766D', 203]
 let g:dracula#palette.yellow    = ['#F5F7A8', 228]
 
+let g:dracula#palette.diffadd   = ['#344a4d',  84]
+let g:dracula#palette.diffdelete= ['#4b3346', 203]
+let g:dracula#palette.diffchange= ['#32395c', 237]
+let g:dracula#palette.difftext  = ['#3f4a87',  61]
+
 "
 " ANSI
 "
