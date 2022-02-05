@@ -202,10 +202,14 @@ call s:h('DraculaSearch', s:green, s:none, [s:attrs.inverse])
 call s:h('DraculaBoundary', s:comment, s:bgdark)
 call s:h('DraculaLink', s:cyan, s:none, [s:attrs.underline])
 
-call s:h('DraculaDiffAdd', s:none, s:diffadd)
-call s:h('DraculaDiffChange', s:none, s:diffchange)
-call s:h('DraculaDiffText', s:none, s:difftext)
-call s:h('DraculaDiffDelete', s:none, s:diffdelete)
+call s:h('DraculaDiffChange', s:orange, s:none)
+call s:h('DraculaDiffText', s:bg, s:orange)
+call s:h('DraculaDiffDelete', s:red, s:bg)
+
+call s:h('DraculaDiffviewDiffAdd', s:none, s:diffadd)
+call s:h('DraculaDiffviewDiffChange', s:none, s:diffchange)
+call s:h('DraculaDiffviewDiffText', s:none, s:difftext)
+call s:h('DraculaDiffviewDiffDelete', s:bg, s:diffdelete)
 
 " }}}2
 
@@ -231,6 +235,13 @@ hi! link DiffAdded    DiffAdd
 hi! link DiffChange   DraculaDiffChange
 hi! link DiffDelete   DraculaDiffDelete
 hi! link DiffRemoved  DiffDelete
+
+hi! link diffAdd      DraculaDiffviewDiffAdd
+hi! link diffAdded    diffAdd
+hi! link diffChanged  DraculaDiffviewDiffChange
+hi! link diffDelete   DraculaDiffviewDiffDelete
+hi! link diffRemoved  diffDelete
+
 hi! link DiffText     DraculaDiffText
 hi! link Directory    DraculaPurpleBold
 hi! link ErrorMsg     DraculaRed
