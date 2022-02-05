@@ -202,15 +202,15 @@ call s:h('DraculaSearch', s:green, s:none, [s:attrs.inverse])
 call s:h('DraculaBoundary', s:comment, s:bgdark)
 call s:h('DraculaLink', s:cyan, s:none, [s:attrs.underline])
 
-" call s:h('DraculaDiffAdd', s:green, s:bg)
-" call s:h('DraculaDiffChange', s:orange, s:bg)
-" call s:h('DraculaDiffText', s:bg, s:orange)
-" call s:h('DraculaDiffDelete', s:red, s:bg)
+call s:h('DraculaDiffAddSign', s:green, s:bg)
+call s:h('DraculaDiffChangeSign', s:orange, s:bg)
+call s:h('DraculaDiffTextSign', s:bg, s:orange)
+call s:h('DraculaDiffDeleteSign', s:red, s:bg)
 
 call s:h('DraculaDiffAdd', s:none, s:diffadd)
 call s:h('DraculaDiffChange', s:none, s:diffchange)
 call s:h('DraculaDiffText', s:none, s:difftext)
-call s:h('DraculaDiffDelete', s:bg, s:diffdelete)
+call s:h('DraculaDiffDelete', s:none, s:diffdelete)
 
 " }}}2
 

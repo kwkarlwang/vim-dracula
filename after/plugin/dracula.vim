@@ -43,22 +43,22 @@ endif
 " }}}
 " GitGutter / gitsigns: {{{
 if exists('g:loaded_gitgutter')
-  hi! link GitGutterAdd    DiffAdd
-  hi! link GitGutterChange DiffChange
-  hi! link GitGutterDelete DiffDelete
+  hi! link GitGutterAdd    DraculaDiffAddSign
+  hi! link GitGutterChange DraculaDiffChangeSign
+  hi! link GitGutterDelete DraculaDiffDeleteSign
 endif
 if has('nvim-0.5') && luaeval("pcall(require, 'gitsigns')")
   " https://github.com/lewis6991/gitsigns.nvim requires nvim > 0.5
   " has('nvim-0.5') checks >= 0.5, so this should be future-proof.
-  hi! link GitSignsAdd      DiffAdd
-  hi! link GitSignsAddLn    DiffAdd
-  hi! link GitSignsAddNr    DiffAdd
-  hi! link GitSignsChange   DiffChange
-  hi! link GitSignsChangeLn DiffChange
-  hi! link GitSignsChangeNr DiffChange
-  hi! link GitSignsDelete   DiffDelete
-  hi! link GitSignsDeleteLn DiffDelete
-  hi! link GitSignsDeleteNr DiffDelete
+  hi! link GitSignsAdd      DraculaDiffAddSign
+  hi! link GitSignsAddLn    DraculaDiffAddSign
+  hi! link GitSignsAddNr    DraculaDiffAddSign
+  hi! link GitSignsChange   DraculaDiffChangeSign
+  hi! link GitSignsChangeLn DraculaDiffChangeSign
+  hi! link GitSignsChangeNr DraculaDiffChangeSign
+  hi! link GitSignsDelete   DraculaDiffDeleteSign
+  hi! link GitSignsDeleteLn DraculaDiffDeleteSign
+  hi! link GitSignsDeleteNr DraculaDiffDeleteSign
 endif
 " }}}
 " Tree-sitter: {{{
