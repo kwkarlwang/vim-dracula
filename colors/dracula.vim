@@ -200,7 +200,7 @@ call s:h('DraculaInfoLine', s:none, s:none, [s:attrs.undercurl], s:cyan)
 call s:h('DraculaTodo', s:cyan, s:none, [s:attrs.bold, s:attrs.inverse])
 call s:h('DraculaSearch', s:green, s:none, [s:attrs.inverse])
 call s:h('DraculaBoundary', s:comment, s:bgdark)
-call s:h('DraculaWinSeparator', s:comment, s:bgdark)
+call s:h('DraculaWinSeparator', s:comment, s:none)
 call s:h('DraculaLink', s:cyan, s:none, [s:attrs.underline])
 
 call s:h('DraculaDiffAddSign', s:green, s:none)
