@@ -136,6 +136,27 @@ if exists('g:loaded_cmp')
 
   hi! link CmpItemMenu Comment
 endif
+
+hi! link markdownBlockquote        DraculaCyan
+hi! link markdownBold              DraculaOrangeBold
+hi! link markdownBoldItalic        DraculaOrangeBoldItalic
+hi! link markdownCodeBlock         DraculaGreen
+hi! link markdownCode              DraculaGreen
+hi! link markdownCodeDelimiter     DraculaGreen
+hi! link markdownH1                DraculaPurpleBold
+hi! link markdownH2                markdownH1
+hi! link markdownH3                markdownH1
+hi! link markdownH4                markdownH1
+hi! link markdownH5                markdownH1
+hi! link markdownH6                markdownH1
+hi! link markdownHeadingDelimiter  markdownH1
+hi! link markdownHeadingRule       markdownH1
+hi! link markdownItalic            DraculaYellowItalic
+hi! link markdownLinkText          DraculaPink
+hi! link markdownListMarker        DraculaCyan
+hi! link markdownOrderedListMarker DraculaCyan
+hi! link markdownRule              DraculaComment
+hi! link markdownUrl               DraculaLink
 " }}}
 
 " vim: fdm=marker ts=2 sts=2 sw=2 fdl=0:

@@ -200,6 +200,7 @@ call s:h('DraculaInfoLine', s:none, s:none, [s:attrs.undercurl], s:cyan)
 call s:h('DraculaTodo', s:cyan, s:none, [s:attrs.bold, s:attrs.inverse])
 call s:h('DraculaSearch', s:green, s:none, [s:attrs.inverse])
 call s:h('DraculaBoundary', s:comment, s:bgdark)
+call s:h('DraculaWinSeparator', s:comment, s:none)
 call s:h('DraculaLink', s:cyan, s:none, [s:attrs.underline])
 
 call s:h('DraculaDiffAddSign', s:green, s:none)
@@ -256,7 +257,7 @@ hi! link TabLine      DraculaBoundary
 hi! link TabLineFill  DraculaBgDarker
 hi! link TabLineSel   Normal
 hi! link Title        DraculaGreenBold
-hi! link VertSplit    DraculaBoundary
+hi! link VertSplit    DraculaWinSeparator
 hi! link Visual       DraculaSelection
 hi! link VisualNOS    Visual
 hi! link WarningMsg   DraculaOrange
@@ -285,7 +286,7 @@ if has('nvim')
   hi! link LspDiagnosticsUnderlineHint DiagnosticUnderlineHint
   hi! link LspDiagnosticsUnderlineInformation DiagnosticUnderlineInfo
   hi! link LspDiagnosticsUnderlineWarning DiagnosticUnderlineWarn
-  
+
   hi! link DiagnosticInfo DraculaCyan
   hi! link DiagnosticHint DraculaCyan
   hi! link DiagnosticError DraculaError
@@ -294,6 +295,8 @@ if has('nvim')
   hi! link DiagnosticUnderlineHint DraculaInfoLine
   hi! link DiagnosticUnderlineInfo DraculaInfoLine
   hi! link DiagnosticUnderlineWarn DraculaWarnLine
+
+  hi! link WinSeparator DraculaWinSeparator
 else
   hi! link SpecialKey DraculaPink
 endif
