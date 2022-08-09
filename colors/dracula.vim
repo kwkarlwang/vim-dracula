@@ -260,6 +260,7 @@ hi! link VertSplit    DraculaBoundary
 hi! link Visual       DraculaSelection
 hi! link VisualNOS    Visual
 hi! link WarningMsg   DraculaOrange
+hi! link QuickFixLine DraculaSelection
 
 " }}}
 " Syntax: {{{
