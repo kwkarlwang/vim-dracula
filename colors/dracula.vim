@@ -221,7 +221,7 @@ call s:h('DraculaDiffDelete', s:none, s:diffdelete)
 set background=dark
 
 " Required as some plugins will overwrite
-call s:h('Normal', s:fg, g:dracula_colorterm || has('gui_running') ? s:bg : s:none )
+call s:h('Normal', s:fg, s:none)
 call s:h('StatusLine', s:none, s:bglighter, [s:attrs.bold])
 call s:h('StatusLineNC', s:none, s:bglight)
 call s:h('StatusLineTerm', s:none, s:bglighter, [s:attrs.bold])
