@@ -103,6 +103,10 @@ if !exists('g:dracula_colorterm')
   let g:dracula_colorterm = 1
 endif
 
+if !exists('g:dracula_high_contrast_diff')
+  let g:dracula_high_contrast_diff = 0
+endif
+
 "}}}2
 " Script Helpers: {{{2
 
@@ -212,6 +216,11 @@ call s:h('DraculaDiffAdd', s:none, s:diffadd)
 call s:h('DraculaDiffChange', s:none, s:diffchange)
 call s:h('DraculaDiffText', s:none, s:difftext)
 call s:h('DraculaDiffDelete', s:none, s:diffdelete)
+if g:dracula_high_contrast_diff
+  call s:h('DraculaDiffChange', s:yellow, s:purple)
+else
+  call s:h('DraculaDiffChange', s:orange, s:none)
+endif
 
 " }}}2
 
