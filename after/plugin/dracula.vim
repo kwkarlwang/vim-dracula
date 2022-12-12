@@ -147,6 +147,9 @@ if exists('g:loaded_nvim_treesitter')
     " HTML and JSX tag attributes. By default, this group is linked to TSProperty,
     " which in turn links to Identifer (white).
     hi! link @tag.attribute DraculaGreenItalic
+
+    " make "public", "statc" pink
+    hi! link @type.qualifier DraculaPink
   endif
 endif
 " }}}
